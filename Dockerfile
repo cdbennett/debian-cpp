@@ -1,3 +1,4 @@
-FROM alpine:latest
+FROM debian:stretch
 MAINTAINER Colin Bennett <colin@gibibit.com>
-RUN apk add --no-cache git openssh-client g++ cmake ninja python3
+RUN apt-get update && apt-get install -y \
+    build-essential
