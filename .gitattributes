@@ -1,0 +1,11 @@
+# Normalize line endings so LF uniformly committed to the repository.
+* text=auto
+
+# Shell scripts should always have LF line endings, even on Cygwin
+# or MinGW/MSYS on Windows.
+*.sh text eol=lf
+
+# Batch files should always be checked out with CRLF line endings.
+# They will still be normalized in the repository (stored as LF).
+*.bat text eol=crlf
+*.cmd text eol=crlf
